@@ -83,6 +83,10 @@ else:
                 return []
 
             uni_filtrados_numeric = pd.get_dummies(uni_filtrados, columns=['areas'])
+
+            # Almacenar los nombres de las universidades
+            nombres_universidades = uni_filtrados['nombre'].values
+            
             uni_filtrados_numeric = uni_filtrados_numeric.drop(columns=['nombre'])
 
             # Seleccionar solo columnas numéricas
@@ -90,7 +94,11 @@ else:
 
             # Verificación de datos
             print("Shape de uni_filtrados_numeric_array:", uni_filtrados_numeric_array.shape)
-            print("Contenido de uni_filtrados_numeric_array:", uni_filtrados_numeric_array)
+            for i, row in enumerate(uni_filtrados_numeric_array):
+                print(f"Universidad: {nombres_universidades[i]}")
+                print(f"Costo: {uni_filtrados.iloc[i]['costo']}")
+                print(f"Ranking: {uni_filtrados.iloc[i]['ranking']}")
+                print(f"Datos: {row}\n")
 
             # Entrenar k-NN con los datos filtrados
             n_neighbors = min(5, len(uni_filtrados_numeric))
