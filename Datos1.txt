@@ -1,0 +1,6 @@
+﻿n
+"(:Universidad {ubicacion: ""capital"",costo: 9000,ranking: 3,areas: ""Ingenieria, Doctorado"",nombre: ""Marro""})"
+"(:Universidad {ubicacion: ""capital"",costo: 4000,ranking: 4,areas: ""licenciatura, Doctorado"",nombre: ""Landivar""})"
+"(:Universidad {ubicacion: ""capital"",costo: 6000,ranking: 1,areas: ""Ingenieria, Doctorado"",nombre: ""UVG""})"
+"(:Universidad {ubicacion: ""capital, "",costo: 500,ranking: 2,areas: ""Licenciatura, Medicina, agronomia"",nombre: ""San carlos""})"
+"(:Universidad {ubicacion: ""capital, "",costo: 2000,areas: ""Licenciatura"",ranking: 5,nombre: ""Galileo""})"
